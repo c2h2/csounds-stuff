@@ -8,8 +8,8 @@ mv testsnd bin
 mv testsnd.o snd
 
 #make db meter
-gcc dB_meter.c -lasound -o bin/dB_meter
-gcc dB_meter_bar.c -lasound -o bin/dB_meter_bar
+gcc dB_meter.c -lasound -o bin/dB_meter -lm
+gcc dB_meter_bar.c -lasound -o bin/dB_meter_bar -lm
 
 
 #make simplerecords
